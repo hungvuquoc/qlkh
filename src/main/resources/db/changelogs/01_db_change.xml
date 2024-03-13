@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="202308290931" author="manhhung">
+        <sqlFile path="db/sql/202308290931_init_table_security.sql"/>
+        <sqlFile path="db/sql/202308291006_insert_init_table_security.sql"/>
+    </changeSet>
+    <changeSet id="202308312251" author="manhhung">
+        <sqlFile path="db/sql/202308312251_create_table_warehouse.sql"/>
+    </changeSet>
+    <changeSet id="202309252212" author="manhhung">
+        <sqlFile path="db/sql/202309252212_create_table_products.sql"/>
+    </changeSet>
+    <changeSet id="202309252220" author="manhhung">
+        <sqlFile path="db/sql/202309252220_create_tbl_warehouse_product_type.sql"/>
+    </changeSet>
+    <changeSet id="202310131143" author="manhhung">
+        <sqlFile path="db/sql/202310131143_create_tbl_employee.sql"/>
+    </changeSet>
+    <changeSet id="202310141021" author="manhhung">
+        <sqlFile path="db/sql/202310141021_create_tbl_warehouse_import.sql"/>
+    </changeSet>
+    <changeSet id="202310141031" author="manhhung">
+        <sqlFile path="db/sql/202310141031_create_tbl_warehouse_export.sql"/>
+    </changeSet>
+    <changeSet id="202310141041" author="manhhung">
+        <sqlFile path="db/sql/202310141041_create_tbl_warehouse_transfer.sql"/>
+    </changeSet>
+    <changeSet id="202310141051" author="manhhung">
+        <sqlFile path="db/sql/202310141051_create_tbl_warehouse_inventory.sql"/>
+    </changeSet>
+    <changeSet id="202311090628" author="manhhung">
+        <sqlFile path="db/sql/202311090628_create_tbl_product_floor.sql"/>
+    </changeSet>
+
+    <changeSet id="202311220905" author="manhhung">
+        <sqlFile path="db/sql/202311220905_alter_tal_role_add_column_warehouse_id.sql"/>
+    </changeSet>
+
+    <changeSet id="202312101434" author="manhhung">
+        <sqlFile path="db/sql/202312101434_create_tbl_organization.sql"/>
+    </changeSet>
+    <changeSet id="202312101459" author="manhhung">
+        <sqlFile path="db/sql/202312101459_insert_tbl_organization.sql"/>
+    </changeSet>
+</databaseChangeLog>
